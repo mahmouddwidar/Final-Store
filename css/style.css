@@ -144,6 +144,36 @@ header {
 
 .navbar-default .nav.navbar-nav li p {
     padding-top: 14px;
+    margin-left: 20px;
+}
+
+.user-data {
+    display: none;
+    background-color: #FFF;
+    border-radius: 5px;
+    text-align: start;
+    padding: 10px 15px;
+    margin-top: 15px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.user-data::before {
+    content: "";
+    position: absolute;
+    border-left: 5px solid var(--primary-color);
+    border-top: 5px solid var(--primary-color);
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    top: -13px;
+    right: 40px;
+}
+
+.user-data span {
+    font-weight: bold;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
@@ -3015,6 +3045,7 @@ form .payment-plan input:checked+label::after,
 .CartCircle:focus {
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .CartCircleCount {
@@ -4213,6 +4244,61 @@ body .chat-icon img {
 
 .justify-content-center {
     justify-content: center;
+}
+
+.cart-window {
+    position: fixed;
+    left: 30px;
+    bottom: 110px;
+    height: 380px;
+    width: 380px;
+    border-radius: 5px;
+    display: none;
+    overflow: hidden;
+    z-index: 999;
+    background-color: #EEE;
+    padding: 20px;
+    background: rgb(0,150,136);
+    background: linear-gradient(360deg, rgba(0,150,136,0.700717787114846) 0%, rgba(255,255,255,1) 78%);
+
+    & .cart-item {
+        border: 1px solid var(--primary-color);
+        border-radius: 3px;
+        background-color: #FFF;
+        padding: 8px 0;
+        margin: 12px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    & i:hover {
+        opacity: .5;
+        cursor: pointer;
+    }
+
+}
+
+.cart-window i {scale: 1.2;}
+
+.cart-window .cart-item .main-img {
+    width: 35%;
+    border-left: 2px solid var(--secondary-color);
+    padding-left: 15px;
+}
+
+.cart-window .cart-item .main-img img {
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+}
+
+.cart-window .cart-item .item-content {
+    text-align: center;
+    width: 50%;
+    & .item-price {
+        color: red;
+    }
 }
 
 .chat-window {
