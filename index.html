@@ -122,7 +122,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="https://www.final.sa">
+                            <a class="navbar-brand" href="#">
                                 <img class="img-responsive" src="https://www.final.sa/uploads/settings/settings_16550742365849.svg" alt="    فاينل | Final | الرئيسية ">
                             </a>
                         </div>
@@ -146,15 +146,18 @@
                             </ul>
                             <ul class="nav navbar-nav navbar-right hidden-xs">
                                 <li data-toggle="modal" id="user-button" data-target="#login">
+                                    <!-- <a href="#" aria-label="login">
+                                        <i class="flaticon-user"></i>
+                                    </a> -->
+                                    <p class="mb-0">اهلاً بك، زياد!</p>
+                                </li>
+                                
+                                <li data-toggle="modal" id="user-button" data-target="#login">
                                     <a href="#">
                                         <i class="flaticon-cart"></i>
                                     </a>
                                 </li>
-                                <li data-toggle="modal" id="user-button" data-target="#login">
-                                    <a href="#" aria-label="login">
-                                        <i class="flaticon-user"></i>
-                                    </a>
-                                </li>
+                                
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-label="select-lang">
                                         <i class="flaticon-global"></i>
@@ -192,14 +195,14 @@
                                 <div class="row">
                                     <div class="col-md-7">
                                         <div class="details_slider">
-                                            <h1>هل عندك معدات تصوير ؟</h1>
-                                            <h2>زيد من دخلك عن طريق عرض معداتك للإيجار مع فاينل</h2>
-                                            <a href="#" class="btn btn-danger">أضف معداتك</a>
+                                            <h1>استأجر، تصور، تأثر، وارجع بأمان!</h1>
+                                            <h2> استئجار معدات التصوير لتحقيق فعالية بدون قلق.</h2>
+                                            <a href="#rent" class="btn btn-danger">استأجر الأن</a>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-12">
                                         <div class="img_slider">
-                                            <img src="https://www.final.sa/uploads/sliders/sliders_16944409842475.svg" height="210px" width="360px" alt="هل عندك معدات تصوير ؟">
+                                            <img src="./imgs/head-camera.png" height="210px" width="360px" alt="هل عندك معدات تصوير ؟">
                                         </div>
                                     </div>
                                 </div>
@@ -484,7 +487,7 @@
                                     </a>
                                     <a href="#">
                                         <div class="one_sec_pro ">
-                                            <img src="https://www.final.sa/uploads/categories/categories_16994286339527.webp" alt="">
+                                            <img class=" w-100" src="./imgs/cat-camera.png" alt="">
                                             <h2>كاميرات</h2>
                                         </div>
                                     </a>
@@ -613,7 +616,7 @@
         </div>
         <div class="last_add_pro">
             <div class="container">
-                <div class="row">
+                <div class="row" id="rent">
                     <div class="title_last">
                         <h1>أضيف مؤخراً</h1>
                     </div>
@@ -756,7 +759,6 @@
                                         </a>
                                     </h2>
                                     <h3>
-                                        <span>750  ر.س</span>
                                         562 ر.س 
                                     </h3>
                                     <div class="cart_heart_list">
@@ -1549,13 +1551,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="copyright">
+                <div class="copyright d-flex justify-content-center align-items-center">
                     <p>
                         جميع الحقوق محفوظة لـ <span>فاينل | Final</span>
                         ©
                 2024
                     </p>
-                    <div class="buy">
+                    <!-- <div class="buy">
                         <ul>
                             <li>
                                 <a href="#" aria-label="visa">
@@ -1583,7 +1585,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </footer>
@@ -1617,7 +1619,7 @@
                 </div>
             </div>
             <div class="start-chat">
-                <a href="https://wa.me/966502220272" target="_blank">
+                <a href="#" >
                     <i class="fab fa-whatsapp"></i>
                     إبدأ المحادثة 
                 </a>

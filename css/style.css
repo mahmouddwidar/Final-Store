@@ -1,5 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap";
 
+:root {
+    --primary-color: #009688;
+    --secondary-color: #00b9a7;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,6 +23,7 @@ a:active,
 a:hover {
     text-decoration: none;
     outline: 0 !important;
+    color: var(--primary-color) !important;
 }
 
 a:active {
@@ -112,7 +118,7 @@ body {
 header {
     padding-bottom: 100px;
     position: relative;
-    background: url(../images/headerbg.svg) left -238px bottom no-repeat #f6f6f6;
+    background: url(../imgs/headersvg.svg) left -238px bottom no-repeat #f6f6f6;
 }
 
 .navbar-default {
@@ -124,7 +130,7 @@ header {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-    color: #be8d5a;
+    color: var(--primary-color);
     background-color: transparent;
 }
 
@@ -136,14 +142,18 @@ header {
     cursor: pointer;
 }
 
+.navbar-default .nav.navbar-nav li p {
+    padding-top: 14px;
+}
+
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
-    color: #be8d5a;
+    color: var(--primary-color);
     background-color: transparent;
 }
 
 .navbar-right li a span.numb {
-    background: #be8d5a;
+    background: var(--primary-color);
     color: #fff;
     font-size: 11px;
     padding: 0 5px;
@@ -165,7 +175,7 @@ header {
 }
 
 .details_slider h1 {
-    color: #be8d5a;
+    color: var(--primary-color);
     font-size: 36px;
     font-weight: 500;
     margin: 0;
@@ -192,7 +202,8 @@ header {
 }
 
 .details_slider a.btn-danger:hover {
-    background: #be8d5a;
+    background: var(--primary-color);
+    color: #fff !important;
 }
 
 .What_today {
@@ -201,7 +212,7 @@ header {
 }
 
 .title h1 {
-    color: #be8d5a;
+    color: var(--primary-color);
     margin-top: 5px;
     border-bottom: 1px solid #e8e8e8;
     font-weight: 500;
@@ -316,7 +327,7 @@ div#myBtnContainer {
 
 .text_prod h2 {
     font-size: 16px;
-    color: #be8d5a;
+    color: var(--primary-color);
     margin-top: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -371,7 +382,7 @@ div#myBtnContainer {
 .hover_hid .icon_cart {
     width: 135px;
     transition: all 0.5s ease 0s;
-    background: #be8d5a;
+    background: var(--primary-color);
     display: inline-block;
     height: 36px;
     display: flex;
@@ -386,7 +397,7 @@ div#myBtnContainer {
 .hover_hid .icon_heart {
     width: 40px;
     transition: all 0.5s ease 0s;
-    background: #be8d5a;
+    background: var(--primary-color);
     display: inline-block;
     line-height: 36px;
     color: #fff;
@@ -517,7 +528,7 @@ footer {
 }
 
 .list_footer .titl_sec {
-    color: #be8d5a;
+    color: var(--primary-color);
     font-size: 18px;
     font-weight: 500;
 }
@@ -550,7 +561,7 @@ footer {
 }
 
 .about_footer .social_footer li a i:hover {
-    background: #be8d5a;
+    background: var(--primary-color);
 }
 
 .contact_footer ul li a::before {
@@ -584,7 +595,7 @@ footer {
 }
 
 .copyright p span {
-    color: #be8d5a;
+    color: var(--primary-color);
     display: inline-block;
 }
 
@@ -612,11 +623,11 @@ footer {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #9c6d24;
+    border-color: var(--primary-color);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #9c6d24;
+    background-color: var(--primary-color);
 }
 
 .dropdown-menu>li>a {
@@ -690,7 +701,7 @@ footer {
 .titl_page {}
 
 .titl_page h1 {
-    color: #be8d5a;
+    color: var(--primary-color);
     font-size: 26px;
     font-weight: 600;
     margin: 20px 0;
@@ -729,7 +740,7 @@ footer {
 }
 
 .contact .contact_info .icon_cont {
-    background: #f1e6d4;
+    background: #0096874b;
     width: 60px;
     height: 60px;
     line-height: 69px;
@@ -742,7 +753,7 @@ footer {
 }
 
 .contact .contact_info .text_cont h2 {
-    color: #be8d5a;
+    color: var(--primary-color);
     font-size: 16px;
     direction: ltr;
     font-weight: 500;
@@ -809,7 +820,7 @@ footer {
 }
 
 .send_message input[type="submit"] {
-    background: #be8d5a;
+    background: var(--primary-color);
     height: 50px;
     border: 0;
     color: #fff;
@@ -826,7 +837,7 @@ footer {
 }
 
 .contact .send_message h1 {
-    color: #be8d5a;
+    color: var(--primary-color);
     font-size: 24px;
     font-weight: 600;
 }
@@ -1590,11 +1601,11 @@ form.form-inline .btn-primary:hover {
 }
 
 .one_sec_pro:hover {
-    border-bottom: 5px solid #be8d5a;
+    border-bottom: 5px solid var(--primary-color);
 }
 
 .CateMove .one_sec_pro.active {
-    border-bottom: 5px solid #be8d5a;
+    border-bottom: 5px solid var(--primary-color);
     background: #fff;
 }
 
@@ -1628,7 +1639,7 @@ form.form-inline .btn-primary:hover {
 
 .one_sec_pro:hover h2,
 .one_sec_pro.active h2 {
-    color: #be8d5a;
+    color: var(--primary-color);
 }
 
 .one_sec_pro img {
@@ -1736,7 +1747,7 @@ form.form-inline .btn-primary:hover {
 .title_last {}
 
 .title_last h1 {
-    color: #be8d5a;
+    color: var(--primary-color);
     font-weight: 500;
     display: inline-block;
     padding-bottom: 25px;
@@ -2959,7 +2970,7 @@ form .payment-plan input:checked+label::after,
     margin: -76px 0 0 -76px;
     border-width: 16px;
     border-style: solid;
-    border-color: #be8d5a #f3f3f3 #f3f3f3;
+    border-color: var(--primary-color) #f3f3f3 #f3f3f3;
     border-image: initial;
     border-radius: 50%;
     animation: 2s linear 0s infinite normal none running spin;
@@ -3359,7 +3370,7 @@ a.btn-dark:hover {
 
 .owl-next:hover,
 .owl-prev:hover {
-    background-color: #be8d5a !important;
+    background-color: var(--primary-color) !important;
     transition: all 0.3s;
 }
 
@@ -3396,7 +3407,7 @@ a.btn-dark:hover {
 }
 
 .owl-dot.active span {
-    background-color: #be8d5a !important;
+    background-color: var(--primary-color) !important;
 }
 
 .pt-0 {
@@ -4094,12 +4105,13 @@ body .chat-icon {
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    background-color: rgba(190, 141, 90, 0.831372549);
+    /* background-color: rgba(190, 141, 90, 0.831372549); */
+    background-color: #00b9a7;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 6px #5f4f3b;
+    box-shadow: 1px 1px 6px var(--primary-color);
     transition: all 0.5s;
     z-index: 999;
 }
@@ -4120,7 +4132,7 @@ body .chat-icon::before {
     width: 70px;
     height: 70px;
     background-color: transparent;
-    border: 1px solid #be8d5a;
+    border: 1px solid var(--primary-color);
     border-radius: 50%;
     z-index: -1;
     animation: anime 1s ease-in-out infinite;
@@ -4222,7 +4234,7 @@ body .chat-icon img {
 
 .chat-window .chat-logo {
     height: 110px;
-    background-color: #be8d5a;
+    background-color: var(--secondary-color);
     text-align: center;
     padding: 10px 20px;
     border-radius: 5px 5px 0 0;
@@ -4265,7 +4277,7 @@ body .chat-icon img {
 }
 
 .chat-window .chat-logo .exit-icon i {
-    color: #be8d5a;
+    color: #000;
 }
 
 .chat-window .chat-content {
@@ -4289,7 +4301,7 @@ body .chat-icon img {
 .chat-window .chat-content .chat-message h4 {
     font-size: 12px;
     text-align: center;
-    color: #be8d5a;
+    color: var(--primary-color);
     font-weight: 500;
 }
 
@@ -4331,7 +4343,7 @@ body .chat-icon img {
     text-decoration: none;
     font-weight: 700;
     padding: 8px 24px;
-    background-color: #be8d5a;
+    background-color: var(--primary-color);
     border-radius: 5px;
     width: 100%;
     text-align: center;
@@ -4342,6 +4354,7 @@ body .chat-icon img {
     cursor: pointer;
     opacity: 0.8;
     transition: all 0.3s;
+    color: #000 !important;
 }
 
 @media (max-width: 300px) {
@@ -4420,7 +4433,7 @@ body .chat-icon img {
 }
 
 #loader div {
-    background-color: #d9b06a;
+    background-color: var(--primary-color);
     display: inline-block;
     float: none;
     position: absolute;
