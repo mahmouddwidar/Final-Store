@@ -1,0 +1,2417 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Final Project to rent ">
+        <meta name="csrf-token" content="5TWXajsDS7OD2nZB1qKDMgLlNN5rg42ogGchs5Rp">
+        <title>فاينل | Final | الرئيسية </title>
+        <!-- Shortcut Icon -->
+        <link rel="shortcut icon" href="https://www.final.sa/admin/images/fav-icon.svg"/>
+        <link rel="stylesheet" type="text/css" href="./css/fontawesome-all.min.css">
+        <!-- <link rel="stylesheet" href="./css/all.min.css"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="https://www.final.sa/website/css/bootstrap.min.css"> -->
+        <link rel="preload" href="./css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="./css/bootstrap.min.css">
+        </noscript>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap-a.min.css">
+        <link rel="stylesheet" href="./css/flaticon.css">
+        <!-- <link rel="stylesheet" href="https://www.final.sa/website/css/hover-min.css"> -->
+        <link rel="preload" href="./css/hover-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="./css/hover-min.css">
+        </noscript>
+        <link rel="stylesheet" href="./css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/intlTelInput.css">
+        <link rel="stylesheet" type="text/css" href="./css/swiper.css">
+        <link rel="stylesheet" type="text/css" href="./css/animate.css">
+        <link rel="stylesheet" type="text/css" href="./css/magnific-popup.css">
+        <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/owl.theme.default.min.css">
+        <link rel="preload" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="./css/style.css">
+        </noscript>
+        <!-- <link rel="stylesheet" type="text/css" href="https://www.final.sa/website/css/style.css"> -->
+        <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="./css/toastr.css">
+        <!-- Sweet Alert-->
+        <link href="./css/sweetalert2.min.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .button {
+                display: inline-block;
+                border: 0;
+                outline: 0;
+                padding: 12px 16px;
+                line-height: 1.4;
+                background-color: #BE8D5A;
+                border-radius: 5px;
+                border: 1px solid #BE8D5A;
+                color: white !important;
+                font-size: 1.2em;
+                cursor: pointer;
+                position: relative;
+                transition: padding-right .3s ease-out;
+            }
+
+            .button.loading {
+                background-color: #BE8D5A;
+                padding-right: 40px;
+            }
+
+            .button.loading:before {
+                content: "";
+                position: absolute;
+                border-radius: 100%;
+                left: 6px;
+                top: 50%;
+                width: 0px;
+                height: 0px;
+                margin-top: -2px;
+                border: 2px solid rgba(255,255,255,0.5);
+                border-left-color: #FFF;
+                border-top-color: #FFF;
+                animation: spin .6s infinite linear, grow .3s forwards ease-out;
+            }
+
+            @keyframes spin {
+                to {
+                    transform: rotate(359deg);
+                }
+            }
+
+            @keyframes grow {
+                to {
+                    width: 14px;
+                    height: 14px;
+                    margin-top: -8px;
+                    left: 30px;
+                }
+            }
+        </style>
+        <link rel="stylesheet" href="https://www.final.sa/website/assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="https://www.final.sa/website/assets/css/owl.theme.default.css">
+    </head>
+    <body>
+        <div id="loader-mask">
+            <div id="loader">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <a data-toggle="modal" id="user-button" data-target="#login" class="CartCircle">
+            <i class="flaticon-cart"></i>
+        </a>
+        <a id="buttontop"></a>
+        <div class="big-loader" id="loader-1" style="display: none">
+            <div class="loader"></div>
+        </div>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle  toggle-menu menu-left push-body" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="https://www.final.sa">
+                                <img class="img-responsive" src="https://www.final.sa/uploads/settings/settings_16550742365849.svg" alt="    فاينل | Final | الرئيسية ">
+                            </a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="#">
+                                        الرئيسية  <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="./order-mechanism.html">آلية الطلب</a>
+                                </li>
+                                <!-- <li class="">
+                                    <a href="https://www.final.sa/about">عن المتجر</a>
+                                </li> -->
+                                <li class="">
+                                    <a href="./contacts.html">تواصل معنا</a>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right hidden-xs">
+                                <li data-toggle="modal" id="user-button" data-target="#login">
+                                    <a href="https://www.final.sa/cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </li>
+                                <li data-toggle="modal" id="user-button" data-target="#login">
+                                    <a href="#" aria-label="login">
+                                        <i class="fa-regular fa-user"></i>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-label="select-lang">
+                                        <i class="flaticon-global"></i>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">English
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
+                                <li data-toggle="modal" id="user-button" data-target="#login">
+                                    <a>سلة الشراء </a>
+                                </li>
+                                <li data-toggle="modal" id="user-button" data-target="#login">
+                                    <a href="#">تسجيل الدخول</a>
+                                </li>
+                                <li>
+                                    <a href="#">English
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+                <div class="slider_products">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="details_slider">
+                                            <h1>هل عندك معدات تصوير ؟</h1>
+                                            <h2>زيد من دخلك عن طريق عرض معداتك للإيجار مع فاينل</h2>
+                                            <a href="#" class="btn btn-danger">أضف معداتك</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="img_slider">
+                                            <img src="https://www.final.sa/uploads/sliders/sliders_16944409842475.svg" height="210px" width="360px" alt="هل عندك معدات تصوير ؟">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End header -->
+        <!-- Login Modal -->
+        <!-- <div class="modal fade" id="change_phone_model" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
+                <div class="modal-content done_pop">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="log_reg_pop">
+                            <h1>تغيير رقم الجوال</h1>
+                            <p>برجاء إدخال رقم الجوال, ليتم إرسال رمز التفعيل في رسالة نصية</p>
+                            <div class="form_tenant log_reg_pop_input">
+                                <div style="margin-bottom: 10px;">
+                                    <label>
+                                        رقم الجوال<span>* </span>
+                                    </label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" value="" name="phone" id="phone-profile" style="text-align:left;direction: ltr;" placeholder="5xxxxxxxx"/>
+                                        <span class="input-group-addon" style="border: none;">
+                                            <select id="country-code-profile" name="country_code_profile" class="SelectCountryCode2">
+                                                <option value="+966" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16076001862138.png">966+</option>
+                                                <option value="+961" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16943517268603.png">961+</option>
+                                                <option value="+971" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16953940443758.png">971+</option>
+                                                <option value="+44" data-verify="both" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16975687698470.png">44+</option>
+                                                <option value="+973" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16976378691639.png">973+</option>
+                                                <option value="+20" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16979854979012.png">20+</option>
+                                                <option value="+962" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_17016115312560.png">962+</option>
+                                                <option value="+965" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_17058477191968.png">965+</option>
+                                            </select>
+                                            <div class="lang-select1">
+                                                <button class="btn-select1" value=""></button>
+                                                <div class="b1">
+                                                    <ul id="change-phone"></ul>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <!-- /input-group -->
+                                <!-- </div>
+                                <div id="error-register-phone-profile"></div>
+                                <div style="margin-bottom: 10px;" id="verify_via_profile">
+                                    <div class="form-group">
+                                        <label>
+                                            التحقق عبر  <span>* </span>
+                                        </label>
+                                        <input class="custom-radio" type="radio" name="verify_via_profile" value="whatsapp" checked/>
+                                        <label class="label-custom" for="whatsapp">
+                                            <i class=""></i>
+                                            واتس اب
+                                        </label>
+                                        <input class="custom-radio" type="radio" name="verify_via_profile" value="sms"/>
+                                        <label class="label-custom" for="sms">
+                                            <i class=""></i>
+                                            الرسائل النصية (غير متاح) 
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="verification-code-profile"></div>
+                                <div id="error-register-code-profile"></div>
+                                <button type="button" id="profile-btn" class="btn btn-primary button" onclick="checkProfilePhone()" style="color: #ffffff">تأكيد</button>
+                                <div id="error-send-code-profile" style="margin-top:12px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
+                <div class="modal-content done_pop">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="log_reg_pop">
+                            <h1>تسجيل الدخول</h1>
+                            <p>برجاء إدخال رقم الجوال, ليتم إرسال رمز التفعيل في رسالة نصية</p>
+                            <div class="form_tenant log_reg_pop_input">
+                                <div style="margin-bottom: 10px;">
+                                    <label>
+                                        رقم الجوال<span>* </span>
+                                    </label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" value="" name="phone" id="phone-register" style="text-align:left;direction: ltr;" placeholder="5xxxxxxxx"/>
+                                        <span class="input-group-addon" style="border: none;">
+                                            <select id="country-code-register" name="country_code" class="SelectCountryCodeLogin">
+                                                <option id="country-code-register-1" data-verify="whatsapp" value="+966" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16076001862138.png">966+</option>
+                                                <option id="country-code-register-3" data-verify="whatsapp" value="+961" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16943517268603.png">961+</option>
+                                                <option id="country-code-register-4" data-verify="whatsapp" value="+971" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16953940443758.png">971+</option>
+                                                <option id="country-code-register-5" data-verify="both" value="+44" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16975687698470.png">44+</option>
+                                                <option id="country-code-register-6" data-verify="whatsapp" value="+973" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16976378691639.png">973+</option>
+                                                <option id="country-code-register-7" data-verify="whatsapp" value="+20" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16979854979012.png">20+</option>
+                                                <option id="country-code-register-8" data-verify="whatsapp" value="+962" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_17016115312560.png">962+</option>
+                                                <option id="country-code-register-9" data-verify="whatsapp" value="+965" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_17058477191968.png">965+</option>
+                                            </select>
+                                            <div class="lang-select">
+                                                <button class="btn-select" value=""></button>
+                                                <div class="b">
+                                                    <ul id="add-login"></ul>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div> -->
+                                    <!-- /input-group -->
+                                <!-- </div>
+                                <div id="error-register-phone"></div>
+                                <div style="margin-bottom: 10px;">
+                                    <label>
+                                        المدينة<span>* </span>
+                                    </label>
+                                    <select id="register_city_id" name="register_city_id" class="form-control">
+                                        <option value="">اختر المدينة</option>
+                                        <option value="6">فرع جدة</option>
+                                        <option value="65">فرع الرياض</option>
+                                        <option value="67">مكة المكرمة</option>
+                                        <option value="71">المنطقة الشرقية</option>
+                                    </select> -->
+                                    <!-- /input-group -->
+                                <!-- </div>
+                                <div id="error-register_city_id"></div>
+                                <div style="margin-bottom: 10px;" id="verify_via">
+                                    <div class="form-group">
+                                        <label>
+                                            التحقق عبر  <span>* </span>
+                                        </label>
+                                        <input class="custom-radio" type="radio" name="verify_via" value="whatsapp" checked/>
+                                        <label class="label-custom" for="whatsapp">
+                                            <i class=""></i>
+                                            واتس اب
+                                        </label>
+                                        <input class="custom-radio" type="radio" name="verify_via" value="sms" disabled/>
+                                        <label class="label-custom" for="sms">
+                                            <i class=""></i>
+                                            الرسائل النصية (غير متاح) 
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="verification-code"></div>
+                                <button type="button" id="register-btn" class="btn btn-primary button " onclick="registerUser()" style="color: #ffffff">تأكيد</button>
+                                <div id="error-send-code" style="margin-top:12px;"></div>
+                                <a class="agin_cod" id="send-code-again" style="display: none">
+                                    اعادة ارسال رمز التحقق  <span id="send-code-count">بعد  60 ثانية  </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+        <!-- <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
+                <div class="modal-content done_pop">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="log_reg_pop">
+                            <h1>تسجيل الدخول</h1>
+                            <p>برجاء إدخال المعلومات المطلوبة ليتم استكمال مرحلة التسجيل</p>
+                            <div class="form_tenant log_reg_pop_input">
+                                <div class="form-group">
+                                    <label>
+                                        الاسم الثلاثي<span>* </span>
+                                    </label>
+                                    <input type="text" id="name-register" placeholder="الاسم الثلاثي"/>
+                                    <div id="error-validation-name"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label>البريد الإلكتروني</label>
+                                    <input type="email" id="email-register" placeholder="البريد الإلكتروني"/>
+                                    <div id="error-validation-email"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label>حساب الانستجرام</label>
+                                    <input type="email" id="instagram-register" placeholder="حساب الانستجرام"/>
+                                    <div id="error-validation-instagram"></div>
+                                </div>
+                                <h3>
+                                    بالتسجيل فانا اوافق على <a href="https://www.final.sa/terms">الشروط والأحكام</a>
+                                </h3>
+                                <button onclick="login()" type="button" class="btn btn-primary">تأكيد</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="modal fade" id="favorite-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
+                <div class="modal-content done_pop">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="succ_done">
+                            <img src="https://www.final.sa/website/images/done.webp" alt=""/>
+                            <h1>المفضلة</h1>
+                            <p>تم الاضافة بنجاح</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="favorite-remove" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
+                <div class="modal-content done_pop">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="succ_done">
+                            <img src="https://www.final.sa/website/images/done.webp" alt=""/>
+                            <h1>المفضلة</h1>
+                            <p>تم ازالة من المفضلة بنجاح</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="rental-city" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
+                <div class="modal-content done_pop">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="log_reg_pop">
+                            <h1>اضافة المدينة</h1>
+                            <p>برجاء إدخال المعلومات المطلوبة ليتم استكمال مرحلة التسجيل</p>
+                            <div class="form_tenant log_reg_pop_input">
+                                <div class="form-group">
+                                    <label>
+                                        المدينة <span>* </span>
+                                    </label>
+                                    <select id="rental-city-value" name="city_id"></select>
+                                    <div id="error-validation-city"></div>
+                                </div>
+                                <button onclick="add_rental_city()" type="button" class="btn btn-primary">تأكيد</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="What_today">
+            <div class="container text-center">
+                <div class="title">
+                    <h1>اختار الي يناسبك</h1>
+                </div>
+                <div class="row">
+                    <div class="buynewgods">
+                        <div class="section_pro">
+                            <div class="row">
+                                <div class="owl-carousel CateMove">
+                                    <a href="#">
+                                        <div class="one_sec_pro">
+                                            <img src="https://www.final.sa/uploads/settings/settings_16999732234871.webp" alt="">
+                                            <h2>الكل</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994286339527.webp" alt="">
+                                            <h2>كاميرات</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_17062762919865.png" alt="">
+                                            <h2>كاميرات الدرونز</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994289448139.webp" alt="">
+                                            <h2>إستاندات الكاميرات</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994287827305.webp" alt="">
+                                            <h2>إكسسوارات الكاميرات</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994286170625.webp" alt="">
+                                            <h2>عدسات</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994289311903.webp" alt="">
+                                            <h2>أجهزة مانع الإهتزاز</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994288045840.webp" alt="">
+                                            <h2>الخلفيات وإستانداتها</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994286044529.webp" alt="">
+                                            <h2>فلاشات إستديو</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994285890958.webp" alt="">
+                                            <h2>الإضاءات المستمرة</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994285593987.webp" alt="">
+                                            <h2>اكسسوارات الإضاءات</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994287523712.webp" alt="">
+                                            <h2>البطااريات وملحقاتها</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994285781462.webp" alt="">
+                                            <h2>معدات الصوت</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994285254721.webp" alt="">
+                                            <h2>أجهزة المناسبات</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994285060184.webp" alt="">
+                                            <h2>أنظمة الفيديو</h2>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="one_sec_pro ">
+                                            <img src="https://www.final.sa/uploads/categories/categories_16994288401329.webp" alt="">
+                                            <h2>كاميرات الأكشن و 360</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END What_today -->
+        <div class="clearfix"></div>
+        <div class="how-final-work">
+            <div class="container">
+                <div class="title_last text-center">
+                    <h1 style="margin-bottom: 20px">كيف يعمل فاينل ؟</h1>
+                </div>
+                <div class="cards-row">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card">
+                                <img src="https://www.final.sa/uploads/final_work/final_work_16957377638639.svg" alt="البحث عن معدات">
+                                <h1>البحث عن معدات</h1>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="https://www.final.sa/uploads/final_work/final_work_16957175550623.svg" alt="اختر التاريخ واحجز">
+                                <h1>اختر التاريخ واحجز</h1>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="https://www.final.sa/uploads/final_work/final_work_16957377735274.svg" alt="الحصول على المعدات">
+                                <h1>الحصول على المعدات</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last_add_pro">
+            <div class="container">
+                <div class="row">
+                    <div class="title_last">
+                        <h1>أضيف مؤخراً</h1>
+                    </div>
+                    <div class="owl-carousel owl-theme recently-added-carousel">
+                        <div class="item">
+                            <div class="product_item product_item2">
+                                <div class="img_prod">
+                                    <img src="https://www.final.sa/uploads/products/products_169979899628507.webp" alt="جهاز نقل صورة وايرلس لجميع الكاميرات من شركة هولي لاند 400 برو">
+                                </div>
+                                <div class="dis_blo">
+                                    <a class="text_prod" href="#">
+                                        <h2>أنظمة الفيديو </h2>
+                                    </a>
+                                    <span class="prod-span">
+                                        <a class="text_prod" href="#">
+                                            <h1>جهاز نقل صورة وايرلس لجميع الكاميرات من شركة هولي...</h1>
+                                        </a>
+                                    </span>
+                                    <h2>
+                                        <a class="store-name" href="#">
+                                            <i class="fa fa-store store-icon"></i>
+                                            FA
+                                        </a>
+                                    </h2>
+                                    <h3>248 ر.س </h3>
+                                    <div class="cart_heart_list">
+                                        <a href="#" class="icon_cart">
+                                            <i class="flaticon-cart"></i>
+                                            أضف إلى السلة
+                                        </a>
+                                        <a href="javascript:heart_click(800)" class="icon_heart add_heart800" aria-label="add-to-favourite">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hover_hid">
+                                    <a href="javascript:add_to_cart_details(800)" class="icon_cart">أضف إلى السلة</a>
+                                    <a href="javascript:heart_click(800)" class="icon_heart add_heart800" aria-label="add-to-favourite">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product_item product_item2">
+                                <div class="img_prod">
+                                    <img src="https://www.final.sa/uploads/products/products_169979835858327.webp" alt="مونيتور أتوموس 5 انش 4K">
+                                </div>
+                                <div class="dis_blo">
+                                    <a class="text_prod" href="#">
+                                        <h2>أنظمة الفيديو </h2>
+                                    </a>
+                                    <span class="prod-span">
+                                        <a class="text_prod" href="#">
+                                            <h1>مونيتور أتوموس 5 انش 4K</h1>
+                                        </a>
+                                    </span>
+                                    <h2>
+                                        <a class="store-name" href="#">
+                                            <i class="fa fa-store store-icon"></i>
+                                            FA
+                                        </a>
+                                    </h2>
+                                    <h3>92 ر.س </h3>
+                                    <div class="cart_heart_list">
+                                        <a href="#" class="icon_cart">
+                                            <i class="flaticon-cart"></i>
+                                            أضف إلى السلة
+                                        </a>
+                                        <a href="javascript:heart_click(482)" class="icon_heart add_heart482" aria-label="add-to-favourite">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hover_hid">
+                                    <a href="javascript:add_to_cart_details(482)" class="icon_cart">أضف إلى السلة</a>
+                                    <a href="javascript:heart_click(482)" class="icon_heart add_heart482" aria-label="add-to-favourite">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product_item product_item2">
+                                <div class="img_prod">
+                                    <img src="https://www.final.sa/uploads/products/products_169979822062409.webp" alt="RED GEMINI 5K S35">
+                                </div>
+                                <div class="dis_blo">
+                                    <a class="text_prod" href="#">
+                                        <h2>كاميرات </h2>
+                                    </a>
+                                    <span class="prod-span">
+                                        <a class="text_prod" href="#">
+                                            <h1>RED GEMINI 5K S35</h1>
+                                        </a>
+                                    </span>
+                                    <h2>
+                                        <a class="store-name" href="#">
+                                            <i class="fa fa-store store-icon"></i>
+                                            Useffilms Studio
+                                        </a>
+                                    </h2>
+                                    <h3>1500 ر.س </h3>
+                                    <div class="cart_heart_list">
+                                        <a href="#" class="icon_cart">
+                                            <i class="flaticon-cart"></i>
+                                            أضف إلى السلة
+                                        </a>
+                                        <a href="javascript:heart_click(1158)" class="icon_heart add_heart1158" aria-label="add-to-favourite">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hover_hid">
+                                    <a href="javascript:add_to_cart_details(1158)" class="icon_cart">أضف إلى السلة</a>
+                                    <a href="javascript:heart_click(1158)" class="icon_heart add_heart1158" aria-label="add-to-favourite">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product_item product_item2">
+                                <div class="img_prod">
+                                    <img src="https://www.final.sa/uploads/products/products_169979850314720.webp" alt="كاميرا كانون C300 مارك 2">
+                                </div>
+                                <div class="dis_blo">
+                                    <a class="text_prod" href="#">
+                                        <h2>كاميرات </h2>
+                                    </a>
+                                    <span class="prod-span">
+                                        <a class="text_prod" href="#">
+                                            <h1>كاميرا كانون C300 مارك 2</h1>
+                                        </a>
+                                    </span>
+                                    <h2>
+                                        <a class="store-name" href="#">
+                                            <i class="fa fa-store store-icon"></i>
+                                            LOOP Media
+                                        </a>
+                                    </h2>
+                                    <h3>
+                                        <span>750  ر.س</span>
+                                        562 ر.س 
+                                    </h3>
+                                    <div class="cart_heart_list">
+                                        <a href="#" class="icon_cart">
+                                            <i class="flaticon-cart"></i>
+                                            أضف إلى السلة
+                                        </a>
+                                        <a href="javascript:heart_click(1034)" class="icon_heart add_heart1034" aria-label="add-to-favourite">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hover_hid">
+                                    <a href="javascript:add_to_cart_details(1034)" class="icon_cart">أضف إلى السلة</a>
+                                    <a href="javascript:heart_click(1034)" class="icon_heart add_heart1034" aria-label="add-to-favourite">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <!-- <div class="special_add_pro">
+            <div class="container">
+                <div class="title_last">
+                    <h1>المنتجات الأكثر طلباً</h1>
+                </div>
+                <div class="owl-carousel owl-theme most-popular-carousel">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_169980167279185.webp" alt="Datavideo TP-300B Prompter Kit for iPad/Android">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>أنظمة الفيديو </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/805">Datavideo TP-300B Prompter Kit for iPad/Android</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=admin&amp;seller_id=1">
+                                                <i class="fa fa-store store-icon"></i>
+                                                FA
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">135 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_170065351724893.jpeg" alt="عدسة سوني جي ماستر 70 - 200 فتحة العدسة 2.8 مارك 2">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>عدسات </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/803">عدسة سوني جي ماستر 70 - 200 فتحة العدسة 2.8 مارك 2</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=admin&amp;seller_id=1">
+                                                <i class="fa fa-store store-icon"></i>
+                                                FA
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">146 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_169980206114683.webp" alt="كاميرا قوبرو هيرو 10 اكشن">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>كاميرات الأكشن و 360 </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/730">كاميرا قوبرو هيرو 10 اكشن</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=admin&amp;seller_id=1">
+                                                <i class="fa fa-store store-icon"></i>
+                                                FA
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">109 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_170335093093206.jpg" alt="عدسة كانون 50 فتحة العدسة 1.2">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>عدسات </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/595">عدسة كانون 50 فتحة العدسة 1.2</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=admin&amp;seller_id=1">
+                                                <i class="fa fa-store store-icon"></i>
+                                                FA
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">140 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_169980230892013.webp" alt="نك مايك وايرليس من شركة رود 2 مايك وجهاز 1 مستقبل مارك 2">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>معدات الصوت </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/538">نك مايك وايرليس من شركة رود 2 مايك وجهاز 1 مستقبل...</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=admin&amp;seller_id=1">
+                                                <i class="fa fa-store store-icon"></i>
+                                                FA
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">92 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_169980235454293.webp" alt="ترايبود  خاص بالكاميرات الكبيره  Manfrotto">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>إستاندات الكاميرات </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/424">ترايبود  خاص بالكاميرات الكبيره  Manfrotto</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=admin&amp;seller_id=1">
+                                                <i class="fa fa-store store-icon"></i>
+                                                FA
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">138 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_169986238715294.webp" alt="اجهزة التواصل للمصورين و المخرج">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>أنظمة الفيديو </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/1176">اجهزة التواصل للمصورين و المخرج</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=user&amp;seller_id=7458">
+                                                <i class="fa fa-store store-icon"></i>
+                                                عبدالله
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">450 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_169986210168724.webp" alt="مانع اهتزاز للجوال من شركة زيون Smooth 5S">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>أجهزة مانع الإهتزاز </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/1169">مانع اهتزاز للجوال من شركة زيون Smooth 5S</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=user&amp;seller_id=8">
+                                                <i class="fa fa-store store-icon"></i>
+                                                anoudhilabi
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">80 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_169986256084029.webp" alt="نان لايت فورزا 60 لونين أبيض وأصفر">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>الإضاءات المستمرة </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/1167">نان لايت فورزا 60 لونين أبيض وأصفر</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=user&amp;seller_id=8">
+                                                <i class="fa fa-store store-icon"></i>
+                                                anoudhilabi
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">69 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_169996473329637.jpg" alt="Godox SK400 II">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>فلاشات إستديو </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/1160">Godox SK400 II</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=user&amp;seller_id=4590">
+                                                <i class="fa fa-store store-icon"></i>
+                                                Suaad
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">170 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_169986269868521.webp" alt="اضاءة مستمرة جمبي 60واط مع سوفت بوكس">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>فلاشات إستديو </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/1054">اضاءة مستمرة جمبي 60واط مع سوفت بوكس</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=user&amp;seller_id=7050">
+                                                <i class="fa fa-store store-icon"></i>
+                                                Photographer
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">60 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 single-item-div">
+                                <div class="resp-div">
+                                    <div class="img_one_spec_pro col-xs-4 pad_0 img_prod">
+                                        <img src="https://www.final.sa/uploads/products/products_169986265663159.webp" alt="جهاز الصور 360 درجة">
+                                    </div>
+                                    <div class="detail_sone_spec_pro col-xs-8 " style="margin-right:0 !important;">
+                                        <h2>أجهزة المناسبات </h2>
+                                        <span class="prod-span-2">
+                                            <a href="https://www.final.sa/product-details/1052">جهاز الصور 360 درجة</a>
+                                        </span>
+                                        <h2>
+                                            <a class="store-name" href="https://www.final.sa/departments/1?seller_type=user&amp;seller_id=7096">
+                                                <i class="fa fa-store store-icon"></i>
+                                                Layan basodan
+                                            </a>
+                                        </h2>
+                                        <h3 class="colr">850 ر.س </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="clearfix"></div>
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h3 class="my-3">آراء العملاء</h3>
+                </div>
+                <div class="reviews owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="review-div">
+                            <div class="d-flex">
+                                <div>
+                                    <img src="data:image/png;base64,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" alt="Lamya">
+                                </div>
+                                <div class="ps-3 w-100">
+                                    <div class="reviewer d-flex align-items-center justify-content-between">
+                                        <h4>Lamya</h4>
+                                        <ul class="list-unstyled mb-0 d-flex">
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>اول تعاون معكم والجايات اكثر 📸👌🏻 خدمه سريعه و الجميع متعاون و الأدوات جدا نظيفه وجديده ✨</p>
+                                    <div class="absolute-div">
+                                        <h5 class="mb-0">
+                                            الاثنين 11 سبتمبر 2023  , <span>12:29 م  </span>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review-div">
+                            <div class="d-flex">
+                                <div>
+                                    <img src="data:image/png;base64,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" alt="وائل محمد">
+                                </div>
+                                <div class="ps-3 w-100">
+                                    <div class="reviewer d-flex align-items-center justify-content-between">
+                                        <h4>وائل محمد</h4>
+                                        <ul class="list-unstyled mb-0 d-flex">
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>خدمة ماشاء الله ممتازة والتيم متعاون جدا وشكرا يامنقذين 😍</p>
+                                    <div class="absolute-div">
+                                        <h5 class="mb-0">
+                                            الاثنين 11 سبتمبر 2023  , <span>4:55 م  </span>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review-div">
+                            <div class="d-flex">
+                                <div>
+                                    <img src="data:image/png;base64,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" alt="رواى منصوري">
+                                </div>
+                                <div class="ps-3 w-100">
+                                    <div class="reviewer d-flex align-items-center justify-content-between">
+                                        <h4>رواى منصوري</h4>
+                                        <ul class="list-unstyled mb-0 d-flex">
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                            <li class="ms-1">
+                                                <i class="fa fa-star gold-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>جزاكم الله خير</p>
+                                    <div class="absolute-div">
+                                        <h5 class="mb-0">
+                                            الأحد 24 سبتمبر 2023  , <span>1:47 م  </span>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  
+                </div>
+            </div>
+        </section>
+        <!-- <div class="aalanat">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="aalan">
+                            <a href=".">
+                                <img src="https://www.final.sa/uploads/sliders/sliders_170635082196805.jpeg" height="auto" width="100%" alt="طريقة التوصيل">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="aalan">
+                            <img src="https://www.final.sa/uploads/sliders/sliders_170635080637286.jpeg" height="auto" width="100%" alt="العرض الشهري">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="aalan">
+                            <img src="https://www.final.sa/uploads/sliders/sliders_170628382176408.jpg" height="auto" width="100%" alt="طريقة الدفع">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="aalan">
+                            <img src="https://www.final.sa/uploads/sliders/sliders_170635078937685.jpeg" height="auto" width="100%" alt="طريقة الطلب">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- END aalanat-->
+        <div class="clearfix"></div>
+        <!-- <div class="modal fade" id="usersetting" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
+                <div class="modal-content done_pop">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="succ_done">
+                            <img src="https://www.final.sa/website/images/done.webp" alt="">
+                            <h1>تم إتمام عملية الدفع بنجاح</h1>
+                            <p>يمكنك متابعة التصفح داخل الموقع</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="modal fade" id="questionaire" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
+                <div class="modal-content done_pop">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="succ_done">
+                            <img src="https://www.final.sa/website/images/done.webp" alt="">
+                            <h1></h1>
+                            <p>يمكنك متابعة التصفح داخل الموقع</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="modal fade" id="verification-sended" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
+                <div class="modal-content done_pop">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="succ_done">
+                            <img src="https://www.final.sa/website/images/done.webp" alt="">
+                            <h1></h1>
+                            <p>يمكنك متابعة التصفح داخل الموقع</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="no_data text-center cart-empty-data" style="display: none;">
+            <img src="https://www.final.sa/website/images/nodata.webp" alt=""/>
+            <h1>لا يوجد محتوى</h1>
+            <p>عفواً, لايوجد محتوي متوفر للعرض</p>
+            <p style="white-space: pre-line;">
+                يمكنك الرجوع لـ <a href="https://www.final.sa" style="color:#be8d5a;text-decoration: underline;">الصفحة الرئيسية </a>
+            </p>
+        </div> -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="top_brand">
+                        <div class="swiper-container2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145766493256.svg" width="100%" height="auto" alt="brands_170145766493256.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145766753279.svg" width="100%" height="auto" alt="brands_170145766753279.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145767091807.svg" width="100%" height="auto" alt="brands_170145767091807.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145767623156.svg" width="100%" height="auto" alt="brands_170145767623156.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145768094570.svg" width="100%" height="auto" alt="brands_170145768094570.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145768520951.svg" width="100%" height="auto" alt="brands_170145768520951.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145770148923.svg" width="100%" height="auto" alt="brands_170145770148923.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145770561480.svg" width="100%" height="auto" alt="brands_170145770561480.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145770925731.svg" width="100%" height="auto" alt="brands_170145770925731.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145773535098.svg" width="100%" height="auto" alt="brands_170145773535098.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145773980759.svg" width="100%" height="auto" alt="brands_170145773980759.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145774461489.svg" width="100%" height="auto" alt="brands_170145774461489.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145774892067.svg" width="100%" height="auto" alt="brands_170145774892067.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145775224639.svg" width="100%" height="auto" alt="brands_170145775224639.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145775684096.svg" width="100%" height="auto" alt="brands_170145775684096.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145776070248.svg" width="100%" height="auto" alt="brands_170145776070248.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145817130981.svg" width="100%" height="auto" alt="brands_170145817130981.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145777781362.svg" width="100%" height="auto" alt="brands_170145777781362.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145778156947.svg" width="100%" height="auto" alt="brands_170145778156947.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145778623048.svg" width="100%" height="auto" alt="brands_170145778623048.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145779534208.svg" width="100%" height="auto" alt="brands_170145779534208.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145779763420.svg" width="100%" height="auto" alt="brands_170145779763420.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145780318603.svg" width="100%" height="auto" alt="brands_170145780318603.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145781161057.svg" width="100%" height="auto" alt="brands_170145781161057.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145782227910.svg" width="100%" height="auto" alt="brands_170145782227910.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145782650162.svg" width="100%" height="auto" alt="brands_170145782650162.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145783521679.svg" width="100%" height="auto" alt="brands_170145783521679.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145784209317.svg" width="100%" height="auto" alt="brands_170145784209317.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145784793872.svg" width="100%" height="auto" alt="brands_170145784793872.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145785479023.svg" width="100%" height="auto" alt="brands_170145785479023.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145785891542.svg" width="100%" height="auto" alt="brands_170145785891542.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145787131970.svg" width="100%" height="auto" alt="brands_170145787131970.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145787570629.svg" width="100%" height="auto" alt="brands_170145787570629.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145787892641.svg" width="100%" height="auto" alt="brands_170145787892641.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145788651438.svg" width="100%" height="auto" alt="brands_170145788651438.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_brand">
+                                        <img src="https://www.final.sa/uploads/brands/brands_170145804551473.svg" width="100%" height="auto" alt="brands_170145804551473.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="content_footer">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="about_footer">
+                                <a href="#">
+                                    <img src="https://www.final.sa/uploads/settings/settings_16550743057261.svg" width="250px" height="auto" alt="    فاينل | Final | الرئيسية ">
+                                </a>
+                                <p>
+                                    لتأجير معدات التصوير<br/>الرقم الضريبي : 300771468700003
+                                </p>
+                                <div class="social_footer">
+                                    <ul>
+                                        <li>
+                                            <a target="_blank" aria-label="Whatsapp" href="#">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" aria-label="Twitter" href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" aria-label="Instagram" href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-7 col-sm-3 col-md-4 col-lg-2">
+                            <div class="list_footer">
+                                <h1 class="titl_sec">معلومات الشركة</h1>
+                                <ul>
+                                    <li>
+                                        <a href="./order-mechanism.html">آلية الطلب </a>
+                                    </li>
+                                    <li>
+                                        <a href="./contacts.html">تواصل معنا </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-7 col-sm-3 col-md-4 col-lg-2">
+                            <div class="list_footer">
+                                <h1 class="titl_sec">معلومات اضافية</h1>
+                                <ul>
+                                    <!-- <li>
+                                        <a href="https://www.final.sa/offers">العروض </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.final.sa/page-details/5">اخلاء المسؤولية </a>
+                                    </li> -->
+                                    <li>
+                                        <a href="./order-mechanism.html">سياسة الإسترجاع </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-sm-3 col-md-4 col-lg-2">
+                            <div class="list_footer contact_footer">
+                                <h1 class="titl_sec">اتصل بنا</h1>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-map"></i>
+                                            موقعنا 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-mobile"></i>
+                                            0512345678 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-envelope"></i>
+                                            <span class="__cf_email__" data-cfemail="6b02050d042b0d02050a0745180a">[email &#160;protected]</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./contacts.html">
+                                            <i class="fas fa-life-ring"></i>
+                                            تواصل معنا 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>
+                        جميع الحقوق محفوظة لـ <span>فاينل | Final</span>
+                        ©
+                2024
+                    </p>
+                    <div class="buy">
+                        <ul>
+                            <li>
+                                <a href="#" aria-label="visa">
+                                    <img src="https://www.final.sa/website/images/visa.webp" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="mastercard">
+                                    <img src="https://www.final.sa/website/images/mastercard.webp" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="mada">
+                                    <img src="https://www.final.sa/website/images/mada.webp" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="applepay">
+                                    <img src="https://www.final.sa/website/images/ApplePay.webp" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://maroof.sa/209186" aria-label="maroof">
+                                    <img src="https://www.final.sa/website/images/Maroof.webp" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="chat-icon">
+            <div class="position-relative">
+                <img src="https://www.final.sa/admin/images/chat.svg" alt="">
+                <div class="notify"></div>
+            </div>
+        </div>
+        <div class="chat-window">
+            <div class="chat-logo d-flex align-items-center justify-content-start">
+                <a href="#" class="exit-icon">
+                    <i class="fas fa-times"></i>
+                </a>
+                <div class="position-relative bg-white rounded-circle">
+                    <img src="https://www.final.sa/admin/images/whatsapp-icon.webp" alt="">
+                    <div class="active-avatar"></div>
+                </div>
+                <div style="margin-right: 36px; text-align: right;">
+                    <h5 class="mb-1">منصة فاينل</h5>
+                    <h6 class="mb-1">خدمة العملاء</h6>
+                    <h6>يتم الرد خلال أوقات العمل الرسمية</h6>
+                </div>
+            </div>
+            <div class="chat-content" style="background-image: url('admin/images/wa-background.webp')">
+                <div class="chat-message">
+                    <h4>منصة فاينل</h4>
+                    <h6>مرحبا بك في فاينل .. </h6>
+                    <h6>اذا كان لديك اي استفسار او طلب </h6>
+                    <h6>فما عليك سوى التواصل معنا </h6>
+                </div>
+            </div>
+            <div class="start-chat">
+                <a href="https://wa.me/966502220272" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    إبدأ المحادثة 
+                </a>
+            </div>
+        </div>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script async src='https://www.google.com/recaptcha/api.js'></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-197839452-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-197839452-1');
+        </script>
+        <!-- Snap Pixel Code -->
+        <script type='text/javascript'>
+            (function(e, t, n) {
+                if (e.snaptr)
+                    return;
+                var a = e.snaptr = function() {
+                    a.handleRequest ? a.handleRequest.apply(a, arguments) : a.queue.push(arguments)
+                }
+                ;
+                a.queue = [];
+                var s = 'script';
+                r = t.createElement(s);
+                r.async = !0;
+                r.src = n;
+                var u = t.getElementsByTagName(s)[0];
+                u.parentNode.insertBefore(r, u);
+            }
+            )(window, document, 'https://sc-static.net/scevent.min.js');
+
+            snaptr('init', 'd34696c2-a191-4a8c-913b-404b5c8c220f', {
+                'user_email': '_INSERT_USER_EMAIL_'
+            });
+
+            snaptr('track', 'PAGE_VIEW');
+        </script>
+        <!-- End Snap Pixel Code -->
+        <script src="https://www.final.sa/website/js/jquery-3.0.0.min.js"></script>
+        <!--<script src="js/jquery-migrate-3.0.0.min.js"></script>-->
+        <script src="https://www.final.sa/website/js/bootstrap.min.js"></script>
+        <script src="https://www.final.sa/website/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="https://www.final.sa/website/js/intlTelInput.js"></script>
+        <script src="https://www.final.sa/website/js/wow.min.js"></script>
+        <script src="https://www.final.sa/website/js/swiper.min.js"></script>
+        <script src="https://www.final.sa/website/js/owl.carousel.min.js"></script>
+        <script src="https://www.final.sa/website/js/custom.js"></script>
+        <script src="https://www.final.sa/website/js/toastr.js"></script>
+        <script src="https://www.final.sa/website/js/magnific-popup.js"></script>
+        <script src="https://www.final.sa/website/assets/js/main.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
+        <!-- Sweet Alerts js -->
+        <script src="https://www.final.sa/admin/libs/sweetalert2/sweetalert2.min.js"></script>
+        <!-- Sweet alert init js-->
+        <script src="https://www.final.sa/admin/js/pages/sweet-alerts.init.js"></script>
+        <script>
+            $(".chat-icon").click(function() {
+                $(".chat-window").slideToggle(500);
+            });
+            $(".exit-icon").click(function() {
+                $(".chat-window").slideUp(500);
+            });
+
+            var langArray = [];
+            var changePhone = [];
+            $('.SelectCountryCodeLogin option').each(function() {
+                var img = $(this).attr("data-thumbnail");
+                var id = $(this).attr("id");
+                var text = this.innerText;
+                var value = $(this).val();
+                var item = '<li><i class="fa fa-chevron-down country-chevron"></i> <span data-name="' + id + '">' + text + '</span><img src="' + img + '" alt="" value="' + value + '"/></li>';
+                langArray.push(item);
+            })
+            /*start change phone*/
+            $('.SelectCountryCode2 option').each(function() {
+                var img = $(this).attr("data-thumbnail");
+                var id = $(this).attr("id");
+                var text = this.innerText;
+                var value = $(this).val();
+                var item = '<li><i class="fa fa-chevron-down country-chevron"></i> <span data-name="' + id + '">' + text + '</span><img src="' + img + '" alt="" value="' + value + '"/></li>';
+                changePhone.push(item);
+            })
+            $('#change-phone').html(changePhone);
+            $('.btn-select1').html(changePhone[0]);
+            $('.btn-select1').attr('value', 'en');
+            $('#change-phone li').click(function() {
+                var img = $(this).find('img').attr("src");
+                // var id_option = $(this).find('span').attr("data-name");
+                var value = $(this).find('img').attr('value');
+                var text = this.innerText;
+                var item = '<li><i class="fa fa-chevron-down country-chevron"></i> <span>' + text + '</span><img src="' + img + '" alt="" /></li>';
+                // var option = '#'+id_option+'';
+                // console.log(option);
+                // $(option).attr('selected',true);
+                $('select[name="country_code_profile"]').val(value).change();
+                $('.btn-select1').html(item);
+                $('.btn-select1').attr('value', value);
+                $(".b1").toggle();
+
+            });
+
+            $(".btn-select1").click(function() {
+                $(".b1").toggle();
+            });
+            var sessionLang1 = localStorage.getItem('lang');
+            if (sessionLang1) {
+
+                var langIndexChangePhone = changePhone.indexOf(sessionLang1);
+                $('.btn-select1').html(changePhone[langIndexChangePhone]);
+                $('.btn-select1').attr('value', sessionLang1);
+            } else {
+                var langIndexChangePhone = changePhone.indexOf('ch');
+                console.log(langIndexChangePhone);
+                $('.btn-select1').html(changePhone[langIndexChangePhone]);
+
+            }
+
+            /*end change phone*/
+
+            $('#add-login').html(langArray);
+            // $('#ddd').html(langArray);
+            $('.btn-select').html(langArray[0]);
+            $('.btn-select').attr('value', 'en');
+
+            $('#add-login li').click(function() {
+                var img = $(this).find('img').attr("src");
+                // var id_option = $(this).find('span').attr("data-name");
+                var value = $(this).find('img').attr('value');
+                var text = this.innerText;
+                var item = '<li><i class="fa fa-chevron-down country-chevron"></i> <span>' + text + '</span><img src="' + img + '" alt="" /></li>';
+                // var option = '#'+id_option+'';
+                // console.log(option);
+                // $(option).attr('selected',true);
+                $('select[name="country_code"]').val(value).change();
+                $('.btn-select').html(item);
+                $('.btn-select').attr('value', value);
+                $(".b").toggle();
+
+            });
+
+            $(".btn-select").click(function() {
+                $(".b").toggle();
+            });
+
+            var sessionLang = localStorage.getItem('lang');
+            if (sessionLang) {
+
+                var langIndex = langArray.indexOf(sessionLang);
+                $('.btn-select').html(langArray[langIndex]);
+                $('.btn-select').attr('value', sessionLang);
+            } else {
+                var langIndex = langArray.indexOf('ch');
+                console.log(langIndex);
+                $('.btn-select').html(langArray[langIndex]);
+
+            }
+
+            var myButton = document.getElementById('register-btn');
+            var profileButton = document.getElementById('profile-btn');
+            function removeClass() {
+                myButton.className = myButton.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
+            }
+            function removeProfileClass() {
+                profileButton.className = myButton.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
+            }
+            // myButton.addEventListener("click", function() {
+            //     console.log('ffff');
+            //     myButton.className = myButton.className + ' loading';
+            // }, false);
+        </script>
+        <script>
+
+            $('select[name="country_code"]').on('change', function() {
+                // var id = $(this).val();
+                var $option = $(this).find(':selected');
+                var id = $option.data('id');
+                var verify = $option.data('verify');
+                if (verify === "whatsapp") {
+                    $('#verify_via').empty().append('<div class="form-group"><label> ' + "التحقق عبر " + ' <span>* </span></label> <input class="custom-radio" type="radio" name="verify_via"  value="whatsapp" checked />' + '<label class="label-custom" for="whatsapp"><i class=""></i>' + " واتس اب" + '</label><input class="custom-radio" type="radio" name="verify_via"  value="sms" disabled />' + ' <label style="width: 155px !important;" for="sms"><i class=""></i>' + "الرسائل النصية (غير متاح) " + '</label></div>');
+                } else if (verify === "both") {
+                    $('#verify_via').empty().append('<div class="form-group"><label> ' + "التحقق عبر " + ' <span>* </span></label> <input class="custom-radio" type="radio" name="verify_via"  value="whatsapp" checked />' + '<label class="label-custom" for="whatsapp"><i class=""></i>' + " واتس اب" + '</label><input class="custom-radio" type="radio" name="verify_via"  value="sms"  />' + ' <label class="label-custom" for="sms"><i class=""></i>' + "الرسائل النصية " + '</label></div>');
+                } else if (verify === "sms") {
+                    $('#verify_via').empty().append('<div class="form-group"><label> ' + "التحقق عبر " + ' <span>* </span></label> <input class="custom-radio" type="radio" name="verify_via"  value="whatsapp" disabled />' + '<label class="label-custom" style="width: 135px !important;" for="whatsapp"><i class=""></i>' + " الواتساب (غير متاح) " + '</label><input class="custom-radio" type="radio" name="verify_via"  value="sms" checked />' + ' <label style="width: 146px !important;" for="sms"><i class=""></i>' + "الرسائل النصية " + '</label></div>');
+                }
+            });
+            $('select[name="country_code_profile"]').on('change', function() {
+                // var id = $(this).val();
+                var $option = $(this).find(':selected');
+                var id = $option.data('id');
+                var verify = $option.data('verify');
+                if (verify === "whatsapp") {
+                    $('#verify_via_profile').empty().append('<div class="form-group"><label> ' + "التحقق عبر " + ' <span>* </span></label> <input class="custom-radio" type="radio" name="verify_via_profile"  value="whatsapp" checked />' + '<label class="label-custom" for="whatsapp"><i class=""></i>' + " واتس اب" + '</label><input class="custom-radio" type="radio" name="verify_via_profile"  value="sms" disabled />' + ' <label style="width: 146px !important;" for="sms"><i class=""></i>' + "الرسائل النصية (غير متاح) " + '</label></div>');
+                } else if (verify === "both") {
+                    $('#verify_via_profile').empty().append('<div class="form-group"><label> ' + "التحقق عبر " + ' <span>* </span></label> <input class="custom-radio" type="radio" name="verify_via_profile"  value="whatsapp" checked />' + '<label class="label-custom" for="whatsapp"><i class=""></i>' + " واتس اب" + '</label><input class="custom-radio" type="radio" name="verify_via_profile"  value="sms"  />' + ' <label class="label-custom" for="sms"><i class=""></i>' + "الرسائل النصية " + '</label></div>');
+                } else if (verify === "sms") {
+                    $('#verify_via_profile').empty().append('<div class="form-group"><label> ' + "التحقق عبر " + ' <span>* </span></label> <input class="custom-radio" type="radio" name="verify_via_profile"  value="whatsapp" disabled />' + '<label class="label-custom" style="width: 135px !important;" for="whatsapp"><i class=""></i>' + " الواتساب (غير متاح) " + '</label><input class="custom-radio" type="radio" name="verify_via_profile"  value="sms" checked />' + ' <label style="width: 146px !important;" for="sms"><i class=""></i>' + "الرسائل النصية " + '</label></div>');
+                }
+            });
+
+            let is_city = false;
+            let is_extend = false;
+            if (is_extend === true) {
+                toastr.success("")
+
+            }
+
+            if (is_city === true) {
+                $('#rental-city').modal('show');
+
+            }
+
+            if ("") {
+                $('#login').modal('show');
+
+            }
+            function change_phone_model() {
+                $('#change_phone_model').modal('show');
+            }
+            function setDisabled() {
+                $('#send-code-again').attr("class", "agin_cod send-code-again");
+            }
+
+            function fade_out() {
+                $("#error-send-code").removeClass('alert alert-danger').removeClass('alert alert-success');
+                $("#error-send-code").empty();
+            }
+            $(document).ready(function() {
+                if ("") {
+                    $('#login').modal('show');
+                }
+                if ("") {
+                    $('#login').modal('show');
+                }
+                $(document).on("click", ".send-code-again", function() {
+                    var CSRF_TOKEN = "5TWXajsDS7OD2nZB1qKDMgLlNN5rg42ogGchs5Rp";
+                    var verify_via = $("input[name='verify_via']:checked").val();
+                    $.ajax({
+                        url: '/resend-code',
+                        type: "post",
+                        data: {
+                            _token: CSRF_TOKEN,
+                            verify_via: verify_via
+                        },
+                        dataType: "json",
+                        success: function(data) {
+                            // console.log(data);
+                            if (data.check === 0) {
+                                $('#error-send-code').empty();
+                                $('#error-send-code').addClass('alert alert-danger');
+                                document.getElementById('error-send-code').innerHTML = data.message;
+                            } else if (data.check === 1) {
+                                $('#error-send-code').empty();
+                                $('#error-send-code').addClass('alert alert-success');
+                                setTimeout(fade_out, 5000);
+                                document.getElementById('error-send-code').innerHTML = data.message;
+                            }
+                            $('#send-code-again').attr("class", "agin_cod");
+                            begin();
+
+                        },
+                        error: data=>crud_handle_server_errors(data),
+                    });
+                });
+            });
+            var timing;
+            var myTimer;
+            function begin() {
+                timing = 60;
+                $('#timing').html(timing);
+                $('#begin').prop('disabled', true);
+                myTimer = setInterval(function() {
+                    --timing;
+                    document.getElementById("send-code-count").innerHTML = "بعد " + " " + timing + " " + "ثانية ";
+                    if (timing === 0) {
+                        clearInterval(myTimer);
+                        document.getElementById("send-code-count").innerHTML = "";
+                        setDisabled();
+                    }
+                }, 1000);
+            }
+            function heart_click(id) {
+                if ("") {
+                    $.ajax({
+                        url: '/add/favorite/' + id,
+                        type: "GET",
+                        dataType: "json",
+                        success: function(data) {
+                            // console.log(data);
+                            $('.add_heart' + id).css('background', '#47164a');
+
+                            if (data.check === 1) {
+                                toastr.error("تم ازالة من المفضلة بنجاح");
+                                // $("#favorite-remove").modal("show");
+                                $('.add_heart' + id).css('background', '#dda54e');
+
+                            } else {
+                                toastr.success("تم الاضافة للمفضلة بنجاح");
+                                // $("#favorite-cart").modal("show");
+                            }
+
+                        }
+                    });
+                } else {
+                    $('#login').modal('show');
+                }
+            }
+            function add_rental_city() {
+                var CSRF_TOKEN = $("meta[name=csrf-token]").attr('content');
+
+                var city = document.getElementById('rental-city-value').value;
+
+                $.ajax({
+                    url: '/add-rental-city',
+                    type: "POST",
+                    data: {
+                        city: city,
+                        _token: CSRF_TOKEN
+                    },
+                    dataType: "json",
+                    success: function(data) {
+                        // console.log(data);
+                        if (data.check === 1) {
+                            $('#rental-city').modal('hide');
+                            toastr.success("تم الاضافة بنجاح");
+                        } else {
+                            toastr.error("حدث خطأ ما !!!");
+                        }
+
+                    },
+                    error: data=>crud_handle_server_errors(data),
+                });
+
+            }
+            function remove_heart(id) {
+                if ("") {
+                    $.ajax({
+                        url: '/remove/favorite/' + id,
+                        type: "GET",
+                        dataType: "json",
+                        success: function(data) {
+                            // console.log(data);
+                            $('#myTableRow' + id).remove();
+
+                            if (data.number === 0) {
+                                $('#favorite-data').empty();
+                                $('#favorite-data').append('<div class="no_data text-center"><img src="https://www.final.sa/website/images/nodata.webp" alt=""> <h1>لا يوجد محتوى</h1> <p>عفواً, لايوجد محتوي متوفر للعرض</p><p style="white-space: pre-line;">يمكنك الرجوع لـ <a href="https://www.final.sa" style="color:#be8d5a;text-decoration: underline;">الصفحة الرئيسية </a></p> </div>');
+
+                            }
+
+                        }
+                    });
+                } else {
+                    $('#login').modal('show');
+                }
+            }
+
+            function registerUser() {
+                var CSRF_TOKEN = $("meta[name=csrf-token]").attr('content');
+
+                var phone = document.getElementById('phone-register').value;
+                var register_city_id = document.getElementById('register_city_id').value;
+
+                var country_code = $('#country-code-register').val();
+                var verify_via = $("input[name='verify_via']:checked").val();
+                if (phone === "" || country_code === "") {
+                    $('#error-register-phone').addClass('alert alert-danger');
+                    document.getElementById('error-register-phone').innerHTML = "ادخل الحقول المطلوبة";
+
+                }
+                if (register_city_id === "") {
+                    $('#error-register_city_id').addClass('alert alert-danger');
+                    document.getElementById('error-register_city_id').innerHTML = "ادخل الحقول المطلوبة";
+
+                } else {
+                    $('#register-btn').prop('disabled', true);
+                    myButton.className = myButton.className + ' loading';
+                    $.ajax({
+                        url: '/check-phone',
+                        type: "post",
+                        data: {
+                            phone: phone,
+                            verify_via: verify_via,
+                            country_code: country_code,
+                            _token: CSRF_TOKEN
+                        },
+                        dataType: "json",
+                        success: function(data) {
+                            // console.log(data);
+                            if (data.check === 1) {
+
+                                $('#error-register-phone').empty();
+                                $('#error-register-phone').removeClass('alert alert-danger');
+                                myButton.className = myButton.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
+                                $('#register-btn').prop('disabled', false);
+                                $("#register-btn").attr("onclick", "checkCode()").css('color', 'white');
+                                $('#verification-code').append('<label>' + "رمز التحقق" + '</label><input type="text" id="confirm-code" placeholder="' + "ادخل رمز التحقق" + '"><div id="error-register-code"></div>')
+                                $('#send-code-again').show();
+                                begin();
+                            } else if (data.check === 2) {
+                                $('#register-btn').prop('disabled', false);
+                                myButton.className = myButton.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
+                                $('#error-register-phone').empty();
+                                $('#error-register-phone').addClass('alert alert-danger');
+                                document.getElementById('error-register-phone').innerHTML = "تم إيقاف عضويتك من قبل الإدارة.";
+                            } else {
+                                $('#register-btn').prop('disabled', false);
+                                myButton.className = myButton.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
+                                $('#error-register-phone').empty();
+                                $('#error-register-phone').addClass('alert alert-danger');
+                                document.getElementById('error-register-phone').innerHTML = "الرقم الذي ادخلته غير صحيح";
+                            }
+
+                        },
+                        error: data=>crud_handle_server_errors(data),
+                    });
+
+                }
+
+            }
+
+            function checkCode() {
+                var CSRF_TOKEN = $("meta[name=csrf-token]").attr('content');
+                var phone = document.getElementById('phone-register').value;
+                var country_code = $('#country-code-register').val();
+                var confirm_code = document.getElementById('confirm-code').value;
+                var register_city_id = document.getElementById('register_city_id').value;
+                var verify_via = $("input[name='verify_via']:checked").val();
+                if (phone === "" || country_code === "") {
+                    $('#error-register-phone').empty();
+                    $('#error-register-phone').addClass('alert alert-danger');
+                    document.getElementById('error-register-phone').innerHTML = "ادخل الحقول المطلوبة";
+
+                }
+                if (confirm_code === "") {
+                    $('#error-register-code').empty();
+                    $('#error-register-code').addClass('alert alert-danger');
+                    document.getElementById('error-register-code').innerHTML = "كود التفعيل مطلوب";
+
+                }
+                if (phone !== "" && country_code !== "" && confirm_code !== "") {
+                    $('#register-btn').prop('disabled', true);
+                    myButton.className = myButton.className + ' loading';
+                    $.ajax({
+                        url: '/check-code',
+                        type: "post",
+                        data: {
+                            phone: phone,
+                            register_city_id: register_city_id,
+                            verify_via: verify_via,
+                            country_code: country_code,
+                            code: confirm_code,
+                            _token: CSRF_TOKEN
+                        },
+                        dataType: "json",
+                        success: function(data) {
+
+                            myButton.className = myButton.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
+                            $('#register-btn').prop('disabled', false);
+                            // console.log(data);
+                            if (data.check === 1) {
+                                window.location.href = data.url;
+                            } else if (data.check === 0) {
+                                $('#error-register-phone').empty();
+                                $('#error-register-phone').addClass('alert alert-danger');
+                                document.getElementById('error-register-phone').innerHTML = "رقم الجوال الذي ادخلته غير صحيح";
+                            } else if (data.check === 2) {
+                                $('#error-register-code').empty();
+                                $('#error-register-code').addClass('alert alert-danger');
+                                document.getElementById('error-register-code').innerHTML = "الكود الذي ادخلته غير صحيح";
+                            } else if (data.check === 3) {
+                                $('#error-register-code').empty();
+                                $('#error-register-phone').empty();
+
+                                $("#register").modal("show");
+                            }
+
+                        },
+                        error: data=>crud_handle_server_errors(data),
+                    });
+
+                }
+            }
+
+            function checkProfilePhone() {
+                var CSRF_TOKEN = $("meta[name=csrf-token]").attr('content');
+                var phone = document.getElementById('phone-profile').value;
+
+                var country_code = $('#country-code-profile').val();
+                var verify_via = $("input[name='verify_via_profile']:checked").val();
+                if (phone === "" || country_code === "") {
+                    $('#error-register-phone-profile').addClass('alert alert-danger');
+                    document.getElementById('error-register-phone-profile').innerHTML = "ادخل الحقول المطلوبة";
+
+                } else {
+                    $('#profile-btn').prop('disabled', true);
+                    profileButton.className = profileButton.className + ' loading';
+                    $.ajax({
+                        url: '/change-phone',
+                        type: "post",
+                        data: {
+                            phone: phone,
+                            verify_via: verify_via,
+                            country_code: country_code,
+                            _token: CSRF_TOKEN
+                        },
+                        dataType: "json",
+                        success: function(data) {
+                            profileButton.className = profileButton.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
+                            $('#profile-btn').prop('disabled', false);
+                            // console.log(data);
+                            if (data.check === 1) {
+                                $('#error-register-phone-profile').empty();
+                                $('#error-register-phone-profile').removeClass('alert alert-danger');
+                                $("#profile-btn").attr("onclick", "checkCodeChangePhone()").css('color', 'white');
+                                $('#verification-code-profile').append('<label>' + "رمز التحقق" + '</label><input type="text" id="confirm-code-profile" placeholder="' + "ادخل رمز التحقق" + '"><div id="error-register-code"></div>')
+                                // $('#send-code-again-profile').show();
+                            } else if (data.check === 3) {
+                                $('#error-register-phone-profile').empty();
+                                $('#error-register-phone-profile').addClass('alert alert-danger');
+                                document.getElementById('error-register-phone-profile').innerHTML = "رقم الجوال مستخدم من قبل";
+                            } else {
+                                $('#error-register-phone-profile').empty();
+                                $('#error-register-phone-profile').addClass('alert alert-danger');
+                                document.getElementById('error-register-phone-profile').innerHTML = "الرقم الذي ادخلته غير صحيح";
+                            }
+
+                        },
+                        error: data=>crud_handle_server_errors(data),
+                    });
+
+                }
+
+            }
+            function checkCodeChangePhone() {
+                var CSRF_TOKEN = $("meta[name=csrf-token]").attr('content');
+                var phone = document.getElementById('phone-profile').value;
+                var country_code = $('#country-code-profile').val();
+                var confirm_code = document.getElementById('confirm-code-profile').value;
+                var verify_via = $("input[name='verify_via_profile']:checked").val();
+                if (phone === "" || country_code === "") {
+                    $('#error-register-phone-profile').empty();
+                    $('#error-register-phone-profile').addClass('alert alert-danger');
+                    document.getElementById('error-register-phone-profile').innerHTML = "ادخل الحقول المطلوبة";
+
+                }
+                if (confirm_code === "") {
+                    $('#error-register-code-profile').empty();
+                    $('#error-register-code-profile').addClass('alert alert-danger');
+                    document.getElementById('error-register-code-profile').innerHTML = "كود التفعيل مطلوب";
+
+                }
+                if (phone !== "" && country_code !== "" && confirm_code !== "") {
+                    $('#profile-btn').prop('disabled', true);
+                    profileButton.className = profileButton.className + ' loading';
+                    $.ajax({
+                        url: '/check-code-change-phone',
+                        type: "post",
+                        data: {
+                            phone: phone,
+                            verify_via: verify_via,
+                            country_code: country_code,
+                            code: confirm_code,
+                            _token: CSRF_TOKEN
+                        },
+                        dataType: "json",
+                        success: function(data) {
+
+                            profileButton.className = profileButton.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
+                            $('#profile-btn').prop('disabled', false);
+                            // console.log(data);
+                            if (data.check === 1) {
+                                toastr.success("تهانينا تم تغيير رقم جوالك بنجاح");
+                                window.location.href = data.url;
+                            } else if (data.check === 2) {
+                                $('#error-register-code-profile').empty();
+                                $('#error-register-code-profile').addClass('alert alert-danger');
+                                document.getElementById('error-register-code-profile').innerHTML = "الكود الذي ادخلته غير صحيح";
+                            }
+
+                        },
+                        error: data=>crud_handle_server_errors(data),
+                    });
+
+                }
+            }
+            function login() {
+                var CSRF_TOKEN = "5TWXajsDS7OD2nZB1qKDMgLlNN5rg42ogGchs5Rp";
+                var name = document.getElementById('name-register').value;
+                var email = document.getElementById('email-register').value;
+                var phone = document.getElementById('phone-register').value;
+                var register_city_id = document.getElementById('register_city_id').value;
+                var instagram = document.getElementById('instagram-register').value;
+                var country_code = $('#country-code-register').val();
+
+                if (email === "") {
+                    $('#error-validation-email').addClass('alert alert-danger');
+                    document.getElementById('error-validation-email').innerHTML = "ادخل الحقول المطلوبة";
+                }
+                if (name === "") {
+                    $('#error-validation-name').addClass('alert alert-danger');
+                    document.getElementById('error-validation-name').innerHTML = "ادخل الحقول المطلوبة";
+
+                }
+                if (IsEmail(email) == false) {
+                    $('#error-validation-email').addClass('alert alert-danger');
+                    document.getElementById('error-validation-email').innerHTML = "صيغة البريد الالكتروني غير صحيحة";
+                    return false;
+                }
+                else {
+
+                    $.ajax({
+                        url: '/register',
+                        type: "post",
+                        data: {
+                            phone: phone,
+                            register_city_id: register_city_id,
+                            country_code: country_code,
+                            name: name,
+                            instagram: instagram,
+                            email: email,
+                            _token: CSRF_TOKEN
+                        },
+                        dataType: "json",
+                        success: function(data) {
+                            // console.log(data);
+                            if (data.check === 1) {
+                                window.location.href = data.url;
+                            } else if (data.check === 0) {
+                                $('#error-validation-phone').empty();
+                                $('#error-validation-phone').addClass('alert alert-danger');
+                                document.getElementById('error-validation').innerHTML = "رقم الجوال الذي ادخلته غير صحيح";
+                            } else if (data.check === 4) {
+                                $('#error-validation-email').empty();
+                                $('#error-validation-email').addClass('alert alert-danger');
+                                document.getElementById('error-validation-email').innerHTML = "البريد الالكتروني مستخدم من قبل";
+                            } else if (data.check === 5) {
+                                $('#error-validation-instagram').empty();
+                                $('#error-validation-instagram').addClass('alert alert-danger');
+                                document.getElementById('error-validation-instagram').innerHTML = "حساب الانستجرام مستخدم من قبل";
+                            }
+
+                        },
+                        error: data=>crud_handle_server_errors(data),
+                    });
+
+                }
+
+            }
+
+            function IsEmail(email) {
+                var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                if (!regex.test(email)) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        </script>
+        <script src="https://www.final.sa/website/assets/js/owl.carousel.js"></script>
+        <script>
+            $(document).ready(function() {
+                if ("" || "") {
+                    $('#usersetting').modal('show');
+                }
+
+                if ("" || "") {
+                    $('#questionaire').modal('show');
+                }
+                if ("" || "") {
+                    $('#verification-sended').modal('show');
+                }
+
+            });
+            $('.recently-added-carousel.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: true,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                navText: ["<i class='fas fa-chevron-right'></i>", "<i class='fas fa-chevron-left'></i>"],
+                rtl: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+            $('.most-popular-carousel.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: true,
+                loop: true,
+                // autoplay:true,
+                // autoplayTimeout:2000,
+                // autoplayHoverPause:true,
+                navText: ["<i class='fas fa-chevron-right'></i>", "<i class='fas fa-chevron-left'></i>"],
+                rtl: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+
+            function add_to_cart_details(id) {
+                var additions = [];
+
+                if ("") {
+
+                    $.ajax({
+                        url: '/add/cart/' + id,
+                        type: "GET",
+                        data: {
+                            'lang': "ar",
+                            'count': document.getElementById('count-of-item') ? document.getElementById('count-of-item').value : 1,
+                            'department': "1",
+                            'additions': additions
+                        },
+                        dataType: "json",
+                        success: function(data) {
+                            if (data.check === 0) {
+                                toastr.error('المنتج مضاف للسله بالفعل');
+                            } else if (data.check === 2) {
+                                toastr.error('عليك اختيار التاريخ والوقت للمنتج');
+
+                            } else if (data.check === 14) {
+                                toastr.error('المنتج غير متوفر');
+                            } else if (data.check === 10) {
+                                toastr.error('يرجى تحديد وقت الاستلام والاسترجاع');
+                            } else if (data.check === 5) {
+                                toastr.error('لا يمكنك إضافة قسم مختلف من المنتج في السلة');
+                            } else if (data.check === "wrong_rent_type") {
+                                toastr.error('لا يمكنك إضافة نوع ايجار مختلف  من المنتج في السلة');
+
+                            } else if (data.check === "wrong_seller_type") {
+                                toastr.error('لا يمكنك إضافة بائع مختلف  لمنتج في السلة');
+
+                            } else if (data.check === 4) {
+                                toastr.error('تاريخ الايجار غير متاح');
+                            } else if (data.check === 40) {
+                                toastr.error('لا يوجد هذا المنتج في مدينتك');
+                            } else if (data.check === 444) {
+                                toastr.error('يجب ان يكون تاريخ التسليم اكبر من تاريخ الاستلام');
+
+                            } else {
+                                toastr.success('تم الاضافة بنجاح');
+
+                                $('#show-cart-2').hide();
+                                $('#show-cart').show();
+                                $('#empty-cart').hide();
+                                document.getElementById('counter-cart').innerHTML = data.number;
+                                document.getElementById('counter-cart2').innerHTML = data.number;
+                                $('#counter-cart2').addClass('CartCircleCount');
+                            }
+
+                        }
+                    });
+                } else {
+                    $.ajax({
+                        url: '/save-to-session/' + id,
+                        type: "GET",
+                        data: {
+                            'lang': "ar",
+                            'count': document.getElementById('count-of-item') ? document.getElementById('count-of-item').value : 1,
+                            'department': "1",
+                        },
+                        dataType: "json",
+                        success: function(data) {
+                            console.log(data);
+                        }
+                    });
+                    $('#login').modal('show');
+                }
+
+            }
+        </script>
+    </body>
+</html>
