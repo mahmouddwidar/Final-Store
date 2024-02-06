@@ -132,7 +132,7 @@
             </div>
         </div>
 
-        <div class="cart-item">
+        <!-- <div class="cart-item">
             <i class="fas fa-times"></i>
             <div class="main-img">
                 <img src="./imgs/product-sample3.webp" alt="">
@@ -141,7 +141,7 @@
                 <p class="item-title">كاميرا كانون C300 مارك 2</p>
                 <p class="item-price">562 ر.س</p>
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- End Cart -->
     <a id="buttontop"></a>
@@ -181,26 +181,14 @@
                             <li class="">
                                 <a href="#">آلية الطلب</a>
                             </li>
-                            <!-- <li class="">
-                            <a href="https://www.final.sa/about">عن المتجر</a>
-                        </li> -->
                             <li class="">
                                 <a href="./contacts.html">تواصل معنا</a>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right hidden-xs">
                             <li data-toggle="modal" id="user-button" data-target="#login">
-                                <!-- <a href="#" aria-label="login">
-                                <i class="flaticon-user"></i>
-                            </a> -->
                             <p class="mb-0"><i class="flaticon-user" style="margin-left: 8px;"></i>اهلاً بك، زياد! </p>
                             </li>
-
-                            <!-- <li data-toggle="modal" id="user-button" data-target="#login">
-                                <a href="#">
-                                    <i class="flaticon-cart"></i>
-                                </a>
-                            </li> -->
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
@@ -217,12 +205,6 @@
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
-                            <!-- <li data-toggle="modal" id="user-button" data-target="#login">
-                                <a>سلة الشراء </a>
-                            </li>
-                            <li data-toggle="modal" id="user-button" data-target="#login">
-                                <a href="#">تسجيل الدخول</a>
-                            </li> -->
                             <li>
                                 <a href="#">English
                                 </a>
@@ -235,255 +217,6 @@
             </nav>
         </div>
     </header><!-- End header -->
-
-
-    <!-- <div class="modal fade" id="change_phone_model" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
-        <div class="modal-content done_pop">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="log_reg_pop">
-                    <h1>تغيير رقم الجوال</h1>
-                    <p>برجاء إدخال رقم الجوال, ليتم إرسال رمز التفعيل في رسالة نصية</p>
-                                        <div class="form_tenant log_reg_pop_input">
-
-                        <div style="margin-bottom: 10px;">
-                            <label> رقم الجوال<span>* </span></label>
-                            <div class="input-group">
-                                <input type="number" class="form-control" value="" name="phone" id="phone-profile" style="text-align:left;direction: ltr;" placeholder="5xxxxxxxx" />
-                                <span class="input-group-addon" style="border: none;">
-                                    <select id="country-code-profile" name="country_code_profile" class="SelectCountryCode2">
-                                                                                    <option value="+966" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16076001862138.png">966+</option>
-                                                                                    <option value="+961" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16943517268603.png">961+</option>
-                                                                                    <option value="+971" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16953940443758.png">971+</option>
-                                                                                    <option value="+44" data-verify="both" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16975687698470.png">44+</option>
-                                                                                    <option value="+973" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16976378691639.png">973+</option>
-                                                                                    <option value="+20" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16979854979012.png">20+</option>
-                                                                                    <option value="+962" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_17016115312560.png">962+</option>
-                                                                                    <option value="+965" data-verify="whatsapp" class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_17058477191968.png">965+</option>
-                                                                            </select>
-                                    <div class="lang-select1">
-                                        <button class="btn-select1" value=""></button>
-                                        <div class="b1">
-                                            <ul id="change-phone">
-                                               
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </span>
-                            </div> -->
-    <!-- /input-group -->
-    <!-- </div>
-                        <div id="error-register-phone-profile"></div>
-                        <div style="margin-bottom: 10px;" id="verify_via_profile">
-                            <div class="form-group">
-                                <label> التحقق عبر  <span>* </span></label>
-                                                                                                    <input class="custom-radio" type="radio" name="verify_via_profile"  value="whatsapp" checked />
-                                    <label class="label-custom" for="whatsapp"><i class=""></i>واتس اب</label>
-                                    <input class="custom-radio" type="radio" name="verify_via_profile"  value="sms"  />
-                                    <label class="label-custom" for="sms"><i class=""></i>الرسائل النصية (غير متاح) </label>
-                                
-                            </div>
-                        </div>
-                        <div class="form-group" id="verification-code-profile">
-                                                    </div>
-                        <div id="error-register-code-profile"></div>
-
-                                                    <button type="button" id="profile-btn" class="btn btn-primary button" onclick="checkProfilePhone()" style="color: #ffffff">تأكيد</button>
-
-                                                <div id="error-send-code-profile" style="margin-top:12px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-    <!-- <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
-        <div class="modal-content done_pop">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="log_reg_pop">
-                    <h1>تسجيل الدخول</h1>
-                    <p>برجاء إدخال رقم الجوال, ليتم إرسال رمز التفعيل في رسالة نصية</p>
-                                        <div class="form_tenant log_reg_pop_input">
-
-                        <div style="margin-bottom: 10px;">
-                            <label> رقم الجوال<span>* </span></label>
-                            <div class="input-group">
-                                <input type="number" class="form-control" value="" name="phone" id="phone-register" style="text-align:left;direction: ltr;" placeholder="5xxxxxxxx" />
-                                <span class="input-group-addon" style="border: none;">
-                                    <select id="country-code-register" name="country_code" class="SelectCountryCodeLogin">
-                                                                                    <option id="country-code-register-1" data-verify="whatsapp" value="+966"   class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16076001862138.png">966+</option>
-                                                                                    <option id="country-code-register-3" data-verify="whatsapp" value="+961"   class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16943517268603.png">961+</option>
-                                                                                    <option id="country-code-register-4" data-verify="whatsapp" value="+971"   class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16953940443758.png">971+</option>
-                                                                                    <option id="country-code-register-5" data-verify="both" value="+44"   class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16975687698470.png">44+</option>
-                                                                                    <option id="country-code-register-6" data-verify="whatsapp" value="+973"   class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16976378691639.png">973+</option>
-                                                                                    <option id="country-code-register-7" data-verify="whatsapp" value="+20"   class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_16979854979012.png">20+</option>
-                                                                                    <option id="country-code-register-8" data-verify="whatsapp" value="+962"   class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_17016115312560.png">962+</option>
-                                                                                    <option id="country-code-register-9" data-verify="whatsapp" value="+965"   class="test" data-thumbnail="https://www.final.sa/uploads/countries/countries_17058477191968.png">965+</option>
-                                                                            </select>
-                                    <div class="lang-select">
-                                        <button class="btn-select" value=""></button>
-                                        <div class="b">
-                                            <ul id="add-login">
-                                          
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </span>
-                            </div> -->
-    <!-- /input-group -->
-    <!-- </div>
-                        <div id="error-register-phone"></div>
-                        <div style="margin-bottom: 10px;">
-                            <label> المدينة<span>* </span></label>
-                            <select id="register_city_id" name="register_city_id" class="form-control">
-                                <option value="">اختر المدينة</option>
-                                                                    <option value="6" >فرع جدة</option>
-                                                                    <option value="65" >فرع الرياض</option>
-                                                                    <option value="67" >مكة المكرمة</option>
-                                                                    <option value="71" >المنطقة الشرقية</option>
-                                                            </select> -->
-    <!-- /input-group -->
-    <!-- </div>
-                        <div id="error-register_city_id"></div>
-                        <div style="margin-bottom: 10px;" id="verify_via">
-                            <div class="form-group">
-                                <label> التحقق عبر  <span>* </span></label>
-                                                                                                    <input class="custom-radio" type="radio" name="verify_via"  value="whatsapp" checked />
-                                    <label class="label-custom" for="whatsapp"><i class=""></i>واتس اب</label>
-                                    <input class="custom-radio" type="radio" name="verify_via"  value="sms" disabled />
-                                    <label class="label-custom" for="sms"><i class=""></i>الرسائل النصية (غير متاح) </label>
-                                
-                            </div>
-                        </div>
-                        <div class="form-group" id="verification-code">
-                                                    </div>
-                                                    <button type="button" id="register-btn" class="btn btn-primary button " onclick="registerUser()" style="color: #ffffff">تأكيد</button>
-
-                                                <div id="error-send-code" style="margin-top:12px;">
-                        </div>
-                        <a class="agin_cod" id="send-code-again" style="display: none" >اعادة ارسال رمز التحقق  <span id="send-code-count"> بعد  60 ثانية  </span> </a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-    <!-- <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
-        <div class="modal-content done_pop">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="log_reg_pop">
-                    <h1>تسجيل الدخول</h1>
-                    <p>برجاء إدخال المعلومات المطلوبة ليتم استكمال مرحلة التسجيل</p>
-                    <div class="form_tenant log_reg_pop_input">
-
-                        <div class="form-group">
-                            <label>الاسم الثلاثي<span>* </span></label>
-                            <input type="text" id="name-register" placeholder="الاسم الثلاثي" />
-                            <div id="error-validation-name"></div>
-                        </div>
-                        <div class="form-group">
-                            <label> البريد الإلكتروني</label>
-                            <input type="email" id="email-register" placeholder="البريد الإلكتروني" />
-                            <div id="error-validation-email"></div>
-                        </div>
-                        <div class="form-group">
-                            <label> حساب الانستجرام</label>
-                            <input type="email" id="instagram-register" placeholder="حساب الانستجرام" />
-                            <div id="error-validation-instagram"></div>
-                        </div>
-
-                        <h3>بالتسجيل فانا اوافق على <a href="https://www.final.sa/terms">الشروط والأحكام</a></h3>
-                        <button onclick="login()" type="button" class="btn btn-primary">تأكيد</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-    <!-- <div class="modal fade" id="favorite-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
-        <div class="modal-content done_pop">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="succ_done">
-                    <img src="https://www.final.sa/website/images/done.webp" alt="" />
-                    <h1>المفضلة</h1>
-                    <p>تم الاضافة بنجاح</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-    <!-- <div class="modal fade" id="favorite-remove" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
-        <div class="modal-content done_pop">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="succ_done">
-                    <img src="https://www.final.sa/website/images/done.webp" alt="" />
-                    <h1>المفضلة</h1>
-                    <p>تم ازالة من المفضلة بنجاح</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-    <!-- <div class="modal" id="rental-city" tabindex="-1" role="dialog"  aria-hidden="true">
-    <div class="modal-dialog modal-dialog2 modal-dialog-centered" role="document">
-        <div class="modal-content done_pop">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="log_reg_pop">
-                    <h1>اضافة المدينة</h1>
-                    <p>برجاء إدخال المعلومات المطلوبة ليتم استكمال مرحلة التسجيل</p>
-                    <div class="form_tenant log_reg_pop_input">
-
-                        <div class="form-group">
-                            <label>المدينة <span>* </span></label>
-                            <select id="rental-city-value" name="city_id">
-                                                          </select>
-                            <div id="error-validation-city"></div>
-                        </div>
-                        <button onclick="add_rental_city()" type="button" class="btn btn-primary">تأكيد</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 
     <div class="breadcrumb">
