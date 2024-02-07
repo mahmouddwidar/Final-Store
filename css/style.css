@@ -3040,6 +3040,22 @@ form .payment-plan input:checked+label::after,
     text-align: center;
     vertical-align: middle;
     color: #fff;
+    /* position: relative; */
+}
+
+.CartCircle::before {
+    content: attr(data-counter);
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .CartCircle:hover,
@@ -4279,6 +4295,8 @@ body .chat-icon img {
         opacity: .5;
         cursor: pointer;
     }
+
+    & h2 {color: #000;}
 
 }
 

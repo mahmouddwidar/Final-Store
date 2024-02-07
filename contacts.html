@@ -110,6 +110,8 @@
         <i class="flaticon-cart"></i>
     </a>
     <div class="cart-window">
+        <h2>السلة</h2>
+
         <div class="cart-item">
             <i class="fas fa-times"></i>
             <div class="main-img">
@@ -420,42 +422,52 @@
         })
     </script>
     <script>
-        let addToCartBtns = document.querySelectorAll('div.hover_hid a.icon_cart');
-        let cartWindow = document.querySelector('.cart-window');
-        let removeBtn = document.querySelectorAll('.fas.fa-times');
+            let addToCartBtns = document.querySelectorAll('div.hover_hid a.icon_cart');
+            let cartWindow = document.querySelector('.cart-window');
+            let removeBtn = document.querySelectorAll('.fas.fa-times');
 
-        for (let i = 0; i < addToCartBtns.length; i++) {
-            addToCartBtns[i].addEventListener('click', function(event) {
+            for (let i = 0; i < addToCartBtns.length; i++) {
+                addToCartBtns[i].addEventListener('click', function(event) {
 
-                let productItem = addToCartBtns[i].parentElement.parentElement;
-                let productImage = productItem.querySelector('.img_prod img').src;
-                let productTitle = productItem.querySelector('.dis_blo a.text_prod h1').textContent;
-                let productPrice = productItem.querySelector('.dis_blo h3').textContent.trim();
-                // console.log( productPrice)
-                let productTemp = `
-                <div class="cart-item">
-                    <i class="fas fa-times"></i>
-                    <div class="main-img">
-                        <img src="${productImage}" alt="">
+                    let productItem = addToCartBtns[i].parentElement.parentElement;
+                    let productImage = productItem.querySelector('.img_prod img').src;
+                    let productTitle = productItem.querySelector('.dis_blo a.text_prod h1').textContent;
+                    let productPrice = productItem.querySelector('.dis_blo h3').textContent.trim();
+                    // console.log( productPrice)
+                    let productTemp = `
+                    <div class="cart-item">
+                        <i class="fas fa-times"></i>
+                        <div class="main-img">
+                            <img src="${productImage}" alt="">
+                        </div>
+                        <div class="item-content">
+                            <p class="item-title">${productTitle}</p>
+                            <p class="item-price">${productPrice}</p>
+                        </div>
                     </div>
-                    <div class="item-content">
-                        <p class="item-title">${productTitle}</p>
-                        <p class="item-price">${productPrice}</p>
-                    </div>
-                </div>
-                `;
-                cartWindow.innerHTML += productTemp;
-            })
-        }
-
-        cartWindow.addEventListener('click', function(e) {
-            let target = e.target;
-            if (e.target.classList.contains('fa-times')) {
-                target.parentElement.remove();
+                    `;
+                    cartWindow.innerHTML += productTemp;
+                    updateCartNumber();
+                })
             }
-        })
 
-    </script>
+            cartWindow.addEventListener('click', function(e) {
+                let target = e.target;
+                if (e.target.classList.contains('fa-times')) {
+                    target.parentElement.remove();
+                    updateCartNumber();
+                }
+            })
+
+            function updateCartNumber() {
+                let items = document.querySelector('.cart-window');
+                let counter = items.getElementsByTagName('i');
+                let icon = document.querySelector('.CartCircle')
+                icon.setAttribute('data-counter', counter.length)
+            }
+            updateCartNumber()
+
+        </script>
 </body>
 
 </html>

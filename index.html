@@ -108,6 +108,7 @@
             <i class="flaticon-cart"></i>
         </a>
         <div class="cart-window">
+            <h2>السلة</h2>
             <!-- <div class="cart-item">
                     <i class="fas fa-times"></i>
                     <div class="main-img">
@@ -814,6 +815,7 @@
                     </div>
                     `;
                     cartWindow.innerHTML += productTemp;
+                    updateCartNumber();
                 })
             }
 
@@ -821,8 +823,17 @@
                 let target = e.target;
                 if (e.target.classList.contains('fa-times')) {
                     target.parentElement.remove();
+                    updateCartNumber();
                 }
             })
+
+            function updateCartNumber() {
+                let items = document.querySelector('.cart-window');
+                let counter = items.getElementsByTagName('i');
+                let icon = document.querySelector('.CartCircle')
+                icon.setAttribute('data-counter', counter.length)
+            }
+            updateCartNumber()
 
         </script>
     </body>
