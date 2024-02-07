@@ -2144,6 +2144,7 @@ form.form-inline .btn-primary:hover {
 
 .icon_cart:hover {
     background: #000 !important;
+    cursor: pointer;
 }
 
 .catproduct .product_item {
@@ -4255,6 +4256,7 @@ body .chat-icon img {
     border-radius: 5px;
     display: none;
     overflow: hidden;
+    overflow-y: auto;
     z-index: 999;
     background-color: #EEE;
     padding: 20px;
