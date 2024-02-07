@@ -377,8 +377,6 @@
         })
     </script>
     <script>
-    </script>
-    <script>
         $('.recently-added-carousel.owl-carousel').owlCarousel({
             loop: false,
             margin: 10,
@@ -420,6 +418,43 @@
                 }
             }
         })
+    </script>
+    <script>
+        let addToCartBtns = document.querySelectorAll('div.hover_hid a.icon_cart');
+        let cartWindow = document.querySelector('.cart-window');
+        let removeBtn = document.querySelectorAll('.fas.fa-times');
+
+        for (let i = 0; i < addToCartBtns.length; i++) {
+            addToCartBtns[i].addEventListener('click', function(event) {
+
+                let productItem = addToCartBtns[i].parentElement.parentElement;
+                let productImage = productItem.querySelector('.img_prod img').src;
+                let productTitle = productItem.querySelector('.dis_blo a.text_prod h1').textContent;
+                let productPrice = productItem.querySelector('.dis_blo h3').textContent.trim();
+                // console.log( productPrice)
+                let productTemp = `
+                <div class="cart-item">
+                    <i class="fas fa-times"></i>
+                    <div class="main-img">
+                        <img src="${productImage}" alt="">
+                    </div>
+                    <div class="item-content">
+                        <p class="item-title">${productTitle}</p>
+                        <p class="item-price">${productPrice}</p>
+                    </div>
+                </div>
+                `;
+                cartWindow.innerHTML += productTemp;
+            })
+        }
+
+        cartWindow.addEventListener('click', function(e) {
+            let target = e.target;
+            if (e.target.classList.contains('fa-times')) {
+                target.parentElement.remove();
+            }
+        })
+
     </script>
 </body>
 
